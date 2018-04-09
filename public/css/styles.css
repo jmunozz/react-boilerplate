@@ -5,53 +5,5 @@
 
 .main-container {
     display: flex;
-}.visualizer-container {
-    flex:5;
-    margin-left:30px;
-}
-
-#img-loading {
-    background-image: url('/public/assets/img/loading.gif');  
-}.filter-container {
-    flex:1;
-}.vis-table-header-cell-cell {
-    flex: 1;
-}
-
-.vis-table-header-cell {
-    flex: 1;
-    background-color: lightgray;
-}
-
-.vis-table-header {
-    display: flex;
-}
-
-.vis-table-body-column {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.vis-table-body-column-cell {
-    flex: 1;
-    height: 40px;
-    border-bottom: solid grey .2px;
-    border-right: solid grey .2px;
-    display: flex;
-    flex-direction: column;
-}
-
-.vis-table-body-column-cell-slot {
-    flex: 1;
-  
-}
-
-.vis-table-body-column-cell-slot-top {
-    border-bottom: solid lightblue .2px
-}
-
-.vis-table-body {
-    display: flex;
 }
 /*# sourceMappingURL=styles.css.map*/

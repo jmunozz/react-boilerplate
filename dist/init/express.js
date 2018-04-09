@@ -28,9 +28,9 @@ var _logger = require('../libs/logger');
 
 var _logger2 = _interopRequireDefault(_logger);
 
-var _routes = require('../routes');
+var _api = require('../routers/api');
 
-var _routes2 = _interopRequireDefault(_routes);
+var _api2 = _interopRequireDefault(_api);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -57,7 +57,7 @@ app.use(_logRequests2.default);
 /**
  * Api Routes
  */
-app.use('/api', _routes2.default);
+app.use('/api', _api2.default);
 
 /**
  * Front-end app delivering.
@@ -66,6 +66,6 @@ app.get('*', function (req, res) {
   res.sendFile(_path2.default.join(PUBLIC, 'index.html'));
 });
 
-app.listen(3000, function () {
-  return _logger2.default.info('Example app listening on port 3000!');
+app.listen(8080, function () {
+  return _logger2.default.info('Example app listening on port 8080!');
 });
